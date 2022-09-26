@@ -1,16 +1,20 @@
 $('.main01 .inner_01').slick({
 	lazyLoad: 'progressive',
-	arrows: true,
-	dots: true,
+	dots: false,
 	speed: 500,
 	infinite: true,
 	swipe: false,
 	fade: true,
+	arrows: true,
+	prevArrow: $(".main_ban_prev"),
+	nextArrow: $(".main_ban_next"),
 	// cssEase: 'ease-in-out',
 	// asNavFor: '#slider-overlay .slides, .slick-dots-thumb'
 });
 
 $('.main01 .inner_01').on( "init reInit afterChange", function (event, slick, currentSlide, nextSlide) {
+	var i = (currentSlide ? currentSlide : 0) + 1;
+	$('p.main_paging').html("<span>" + i + "</span>" + " / " + slick.slideCount);
 	setTimeout(() => { $('.main01 .inner_02').slick('slickGoTo', currentSlide); }, 500);
 	setTimeout(() => { $('.main01 .inner_03').slick('slickGoTo', currentSlide); }, 1000);
 });
