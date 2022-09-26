@@ -1,75 +1,35 @@
-/* layout */
-.slick-container {
+#slick-container {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
 }
 
-.slick-container .h-item {
-  /* flex: 1; */
-  flex: 1 0 50px;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 150px;
+#slick-container .left {
+
 }
+#slick-container .rigth {}
 
-.vbox {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.vbox .v-item {}
+#slick-container .rigth .top {}
+#slick-container .rigth .bottom {}
 
 
-.slides {
-  width: auto;
-  margin: 30px 50px 50px;
-}
 
-.slick-slide {
-  background: #3a8999;
-  color: white;
-  padding: 40px 0;
-  font-size: 30px;
-  font-family: "Arial", "Helvetica";
-  text-align: center;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-.slick-dots {
-  bottom: -30px;
-}
-
-.slick-current {
-  color: #e1d7d2;
-}
-
-.slick-dots-thumb .slick-slide:not(.slick-current) {
-  opacity: 0.1;
-}
-
-.slick-dots-thumb .slick-slide {
-  font-size: 17px;
-  margin: 0 0.25em;
-}
-
-.slick-slide:nth-child(2) {
-  background: #e84a69;
-}
-
-.slick-slide:nth-child(3) {
-  background: #036;
-}
-
-.slick-slide:nth-child(4) {
-  background: #998099;
-}
-
-.slick-slide:nth-child(5) {
-  background: #808c99;
-}
+/* 메인영역01 : 메인 키비주얼 */
+/* .mm_sec01 {margin-bottom:120px;}
+.mm_sec01 .swiper01 {width:100%; height: 840px;opacity: 0;}
+.mm_sec01 .swiper01 .swiper-slide {width:1920px; position:relative;}
+.mm_sec01 .swiper01 .swiper-slide img {width:100%;height:100%;}
+.mm_sec01 .swiper01 .swiper-slide .inner {opacity:0; font-size:0px; text-align:left; position:absolute; left:1160px; top:0px; height:100%; margin-left:0px; display:flex; flex-direction:column; -webkit-box-pack: center; justify-content:center; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s;  transition: all 0.4s;}
+.mm_sec01 .swiper01 .swiper-slide.main02 .inner,
+.mm_sec01 .swiper01 .swiper-slide.main04 .inner {left:364px;}
+.mm_sec01 .swiper01 .swiper-slide-active .inner {opacity:1; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s;  transition: all 0.4s;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t01 {color:#1a1a1a; font-size:18px; font-weight:600; line-height:24px; letter-spacing:-0.02em;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t02 {color:#1a1a1a; font-size:48px; font-weight:700; line-height:64px; padding-top:16px;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t03  {color:#9a9a9a; font-size:16px; font-weight:400; line-height:24px; padding-top:38px;letter-spacing:-0.02em;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t04 a {position: relative;width:238px; height:62px; line-height:24px; border:1px solid #1a1a1a; color:#1a1a1a; font-size:16px; font-weight:500; text-align:center; background-color:transparent;display:flex;justify-content:center;align-items:center;margin-top:60px;letter-spacing:-0.02em;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t04 span {display:block;}
+.mm_sec01 .swiper01 .swiper-slide .inner .t04 span.arrow_lb {display:block;width:24px;height:24px; background-image:url('../morenvyimg/svg/arrow_light_b.svg');background-repeat:no-repeat;background-position:center;}
+.mm_sec01 .swiper01 .swiper-pagination-bullets {bottom:48px !important;}
+.mm_sec01 .swiper01 .swiper-pagination-bullet {margin:0 4px !important; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s;  transition: all 0.3s;}
+.mm_sec01 .swiper01 .swiper-pagination-bullet {opacity:1;background:#d1d1d1;width:22px;height:2px;border-radius:0px;vertical-align:middle; border:1px solid #d1d1d1;}
+.mm_sec01 .swiper01 .swiper-pagination-bullet-active {opacity:1; background:#1a1a1a; width:54px; height:2px; border:1px solid #1a1a1a; }
+.mm_sec01 .swiper01 .swiper-button-prev-main {background-image:url('../morenvyimg/svg/main_ar_left.svg'); left:60px; width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; left:50%; margin-left:-870px;;}
+.mm_sec01 .swiper01 .swiper-button-next-main {background-image:url('../morenvyimg/svg/main_ar_right.svg'); right:60px;  width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; right:50%; margin-right:-870px;} */
