@@ -1,0 +1,50 @@
+$c1: #3a8999;
+$c2: #e84a69;
+$c3: #036;
+$c4: #998099;
+$c5: #808c99;
+.slides {
+  width: auto;
+  margin: 30px 50px 50px;
+}
+
+.slick-slide {
+  background: $c1;
+  color: white;
+  padding: 40px 0;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+.slick-current {
+  color: #e1d7d2;
+}
+.slick-dots-thumb .slick-slide:not(.slick-current){
+	opacity: .1;
+}
+.slick-dots-thumb .slick-slide {
+	font-size: 17px;
+	margin: 0 .25em;
+}
+.slick-slide:nth-child(2) {
+  background: $c2;
+}
+.slick-slide:nth-child(3) {
+  background: $c3;
+}
+.slick-slide:nth-child(4) {
+  background: $c4;
+}
+.slick-slide:nth-child(5) {
+  background: $c5;
+}
+
