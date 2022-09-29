@@ -44,3 +44,98 @@
 .mm_sec01 .swiper01 .swiper-pagination-bullet-active {opacity:1; background:#1a1a1a; width:54px; height:2px; border:1px solid #1a1a1a; }
 .mm_sec01 .swiper01 .swiper-button-prev-main {background-image:url('../morenvyimg/svg/main_ar_left.svg'); left:60px; width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; left:50%; margin-left:-870px;;}
 .mm_sec01 .swiper01 .swiper-button-next-main {background-image:url('../morenvyimg/svg/main_ar_right.svg'); right:60px;  width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; right:50%; margin-right:-870px;}
+
+
+/*커스텀 메인슬라드 배너*/
+.mm_sec01 .swiper01 {
+	height:830px;
+}
+.mm_sec01 {
+	margin-bottom:200px;
+}
+.mm_sec01 .c_main {
+	display:flex;
+}
+.mm_sec01 .c_main .c_inner {
+	width:50%;
+}
+.mm_sec01 .c_main .txt_box {
+	padding: 200px 0px 0px 100px;
+}
+.mm_sec01 .c_main .txt_box .txt01 {
+	font-size:34px;
+    margin-bottom:10px;
+    
+}
+.mm_sec01 .c_main .txt_box .txt02 {
+	font-size:34px;
+    margin-bottom:20px;
+}
+.mm_sec01 .c_main .c_inner .inner_01 {
+    background: url(//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/farmdew_main01.png);
+}
+.mm_sec01 .c_main .c_inner .inner_02 {
+	width:100%;
+    height:50%;
+}
+.mm_sec01 .main01 .c_inner .inner_02_1 {
+    background: #94D16E;
+}
+.mm_sec01 .main01 .c_inner .inner_02_2 {
+    background: #FFB876;
+}
+.mm_sec01 .main01 .c_inner .inner_02_3 {
+    background: #FFEEB0;
+}
+.mm_sec01 .c_main .c_inner .inner_03 {
+	width:100%;
+    height:50%;
+}
+.mm_sec01 .c_more_btn {
+	position: relative;
+    width: auto;
+    height: 20px;
+    line-height: normal;
+    color: #1a1a1a;
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    font-weight: 400;
+    display: inline-block;
+    text-align: left;
+    letter-spacing: -0.02em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.mm_sec01 .c_more_btn img{width:auto !important;}
+.ec-base-product .prdList .thumbnail .prdImg {width:100%;}
+.ec-base-product .prdList .thumbnail a img {width:100%;}
+
+
+
+@keyframes Play {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
+@-webkit-keyframes Play {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
+@-moz-keyframes Play {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
+@-ms-keyframes Play {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
+@-o-keyframes fPlay {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes Play {
+  0% { stroke-dashoffset: 170; }
+  100% { stroke-dashoffset: 0; }
+}
