@@ -1,0 +1,405 @@
+<!--@import(/mheader.html)-->
+
+<!--@css(/morenvy/css/main_y.css)-->
+<!--@js(/morenvy/js/main_script_y.js)-->
+<!--@css(/animation.css)-->
+<!--@css(/custom_y.css)-->
+
+<!---------------------------------------------------------------------------------------------------------------------------------------
+
+	- 디자인 수정을 하시려면 현재페이지 좌측(←)의 메뉴에서 [전체화면보기 탭] 을 선택하신후 스크롤을 내리셔서 link.html을 클릭해 주세요.
+	- 좌측의 메뉴에서 link.html 페이지를 [★자주쓰는화면]으로 선택하시면 좀더 편안하게 접근이 가능합니다.
+	- link.html 페이지에서 손쉽게 디자인 수정이 가능합니다. (FTP : /sde_design/디자인스킨번호/link.html)
+
+	- https://morenvy.com // 02-812-3881 // 고객센터
+	- https://blog.naver.com/morenvy // 온라인매뉴얼
+	- EMAIL : morenvy@hanmail.net
+
+----------------------------------------------------------------------------------------------------------------------------------------->
+<style>
+    .ec-base-product ul.grid3 > li {width:32% !important;}
+</style>
+
+<div class="main_content">
+	<section class="mm_sec01">
+		<div class="swiper swiper01 cboth">
+			<div class="swiper-wrapper">
+				<!-- 메인영역01 : 메인 비주얼 -->
+				<!--@import(/mm_mainvisual2_y.html)-->
+			</div><!-- //swiper-wrapper -->
+		
+		</div><!-- //swiper01 -->
+	</section><!-- //mm_sec01 -->
+    
+    <section class="mm_sec02">
+		<div class="swiper swiper02 cboth aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+			<div class="title_box">
+				<!-- 메인영역02 : 타이틀 -->
+				<!--@import(/section/mm_sec02_title.html)-->
+			</div><!-- //title_box -->
+		
+			<!-- 메인영역02 : 탭 텍스트 -->
+			<!--@import(/section/mm_tab_text.html)-->
+			<div class="swiper-wrapper">
+				<!-- 메인영역02 : 탭 상품 진열대 -->
+				<div class="swiper-slide">
+					<div module="product_listmain_3" class="cboth ec-base-product">
+						<!--
+						$count = 3
+						※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+						※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+						-->
+						<ul class="prdList grid3">
+							<!--@import(/product/main_list_product.html)-->
+						</ul>
+					</div><!-- //product_listmain_3 -->
+				</div>
+				<div class="swiper-slide">
+					<div module="product_listmain_4" class="cboth ec-base-product">
+						<!--
+						$count = 3
+						※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+						※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+						-->
+						<ul class="prdList grid3">
+							<!--@import(/product/main_list_product.html)-->
+						</ul>
+					</div><!-- //product_listmain_4 -->
+				</div>
+			</div><!-- //swiper-wrapper -->
+            <a href="/category/전체/45/" class="c_best_btn"><span>SHOP NOW</span><span class="arrow_lb"><img src="/morenvyimg/svg/arrow_light_b.svg" alt="더보기화살표"></span></a></div>
+			<div class="swiper-pagination swiper-pagination2 m_off"></div>
+			<div class="drag_bar02">
+				<div class="swiper-scrollbar swiper-scrollbar2"></div>
+			</div><!-- //drag_bar02 -->
+		</div><!-- //swiper2 -->
+	</section><!-- //mm_sec02 -->
+
+	<!-- 중간 띠 배너 -->
+	<section class="mm_sec12  aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <div class="title_box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="title_txt">Fresh Juice!</div>
+	        <div class="title_link"><a href="/recommend.html">맞춤 제품 추천 바로 가기<span class="arrow_lb"><img src="/morenvyimg/svg/arrow_light_b.svg" alt="더보기화살표"></span></a></div>        
+        </div>
+		<img class="banner .animate__animated.animate__fadeInUp" src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/main_middle_banner.png">
+	</section>
+
+	<!-- 매인 페이지 브랜드 스토리 -->
+	<section class="mm_sec13">
+        <div class="cont_box">
+        	<div class="sec_left aos-init aos-animate" data-aos="fade-right"></div>
+            <div class="sec_right">
+                <div class="txt01 aos-init aos-animate" data-aos="fadeInUp">Wellness Habit</div>
+                <div class="txt02 aos-init aos-animate" data-aos="fadeInUp" data-aos-delay="300">
+                    <p>건강함, 그 첫 번째는 식습관부터 시작됩니다.</p>
+                    <p>가끔 우리는 바쁜 일상속에서</p>
+                    <p>균형있는 식습관을 잊을 때가 있습니다.</p>                
+                    <p>균형 있는 영양섭취는 건강한 식습관의 기본입니다.</p>
+                    <p>부족한 영양소를 채우는 작은 식습관 with FarmDew</p>                
+                </div>
+                <div class="txt03 aos-init aos-animate" data-aos="fadeInUp" data-aos-delay="500"><a href="/brand.html">BRAND STORY<span class="arrow_lb"><img src="/morenvyimg/svg/arrow_light_b.svg" alt="더보기화살표"></span></a></div>
+	        </div>    
+        </div>
+	</section>
+
+	<section class="mm_sec07 aos-init aos-animate" data-aos="RightFull" data-aos-duration="1000" >
+		<div class="mm_review_bg01 m_off"></div>
+		<div class="mm_review_bg02 m_off"></div>
+		<!-- 메인영역 07 : 베스트 리뷰  -->	
+        <div class="title_box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <!-- 메인영역07 : 타이틀 -->
+            <!--@import(/section/mm_sec07_title.html)-->
+        </div><!-- //title_box -->
+        <div class="review_cont">
+            <div class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="re_content">
+                    <p></p>
+                </div>        
+                <div class="re_date"><span class="_writer"></span><img src="/morenvyimg/svg/ft_line.svg" alt=""><span class="_date"></span></div>
+            </div>
+            <div class="re-pagination">
+                <span class="re-pagination-current"></span> / <span class="re-pagination-total"></span>
+            </div>
+        </div>
+		<div class="mm_review">
+			<div class="main_pro prdList grid4 review_li swiper swiper07 aos-init aos-animate" module="board_list_4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+					<!--
+						$count = 8
+						$login_page_url = /member/login.html
+						$deny_access_url = /index.html
+					-->
+				<ul class="swiper-wrapper">
+					<!-- 메인영역 07 : 리뷰목록 -->
+					<!--@import(/section/mm_review_list.html)-->
+				</ul>
+                <div class="swiper-pagination"></div>
+			</div><!-- //swiper_r -->
+            <div class=" swiper-arrow swiper-button-next swiper-button-next-review move">
+                <svg class="svg_circle"><circle cx="30" cy="30" r="27" stroke-dasharray="170" stroke-dashoffset="170"></circle></svg>
+            </div>
+            <div class=" swiper-arrow swiper-button-prev swiper-button-prev-review move">
+                <svg class="svg_circle"><circle cx="30" cy="30" r="27" stroke-dasharray="170" stroke-dashoffset="170"></circle></svg>
+            </div>
+            
+		</div>
+		<div class="review_more cboth m_off"><a href="/board/product/list.html?board_no=4" class="more_btn"><span>리뷰 더 보러 가기</span><span class="arrow_lb"><img src="/morenvyimg/svg/arrow_light_b.svg" alt="더보기화살표"></span></a></div>			
+	</section><!-- //mm_sec07 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+	/*초기 리뷰*/
+    const re_txt = $('.mm_sec07 .swiper-slide-active .re_content').text();
+    $('.mm_sec07 .review_cont .re_content p').text(re_txt);
+    
+    const re_writer = $('.mm_sec07 .swiper-slide-active .re_date ._writer').text();
+    $('.mm_sec07 .review_cont .re_date span._writer').text(re_writer);
+    
+    const re_date = $('.mm_sec07 .swiper-slide-active .re_date ._date').text();
+	$('.mm_sec07 .review_cont .re_date span._date').text(re_date);
+    
+    const re_cur = $('.mm_sec07 .swiper-pagination-current').text();
+	$('.mm_sec07 .review_cont .re-pagination-current').text(re_cur);
+    
+    const re_total = $('.mm_sec07 .swiper-pagination-total').text();
+	$('.mm_sec07 .review_cont .re-pagination-total').text(re_total);
+    
+    
+    
+    /*리뷰 변경 감지*/
+    // Mutation Observer
+    // 감시 대상 node 선택
+    let target = document.querySelector('.mm_sec07 .swiper-wrapper');
+
+    // 감시자 인스턴스 만들기
+    let observer = new MutationObserver((mutations) => {
+        // 노드가 변경 됐을 때의 작업
+        const re_txt = $('.mm_sec07 .swiper-slide-active .re_content').text();
+        $('.mm_sec07 .review_cont .re_content p').text(re_txt);
+
+        const re_writer = $('.mm_sec07 .swiper-slide-active .re_date ._writer').text();
+        $('.mm_sec07 .review_cont .re_date span._writer').text(re_writer);
+
+        const re_date = $('.mm_sec07 .swiper-slide-active .re_date ._date').text();
+        $('.mm_sec07 .review_cont .re_date span._date').text(re_date);
+
+        const re_cur = $('.mm_sec07 .swiper-pagination-current').text();
+        $('.mm_sec07 .review_cont .re-pagination-current').text(re_cur);
+
+        const re_total = $('.mm_sec07 .swiper-pagination-total').text();
+        $('.mm_sec07 .review_cont .re-pagination-total').text(re_total);
+		
+    })
+
+    // 감시자의 설정
+    let option = {
+        attributes: true,
+        childList: true,
+        characterData: true
+    };
+
+    // 대상 노드에 감시자 전달
+    observer.observe(target, option);
+</script>
+
+<!-- AOS 스크립트 시작 -->
+<script> 
+    AOS.init({
+		duration: 1000
+	}); 
+</script>
+
+    
+    <!-----미사용 시작----->
+
+	<section class="mm_sec04 width1280 m_off">
+		<div class="swiper swiper04 cboth">
+			<div class="swiper-wrapper">
+				<!-- 메인영역04 : 배너슬라이드 -->
+				<!--@import(/section/mm_banner01.html)-->	
+			</div><!-- //swiper-wrapper -->
+			<div class="swiper-pagination swiper-pagination4 move"></div>
+		</div><!-- //swiper03 -->
+	</section><!-- //mm_sec04 -->
+    
+    <section class="section_card width1280 m_off">
+        <div class="section_title">고객님 무엇이 궁금하세요?</div>
+        <div class="card_wrap">
+        	<div class="card_box">
+                <a href="/recommend.html">
+                	<div class="card_info">
+                        <div class="icon"><img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/main_product.svg"></div>
+                        <div class="title">제품</div>
+                        <div class="description">어떤 제품이<br>나에게 맞을까요?</div>
+       		        </div>            	                    
+                </a>
+                
+            </div>
+        	<div class="card_box">
+                <a href="/brand.html">
+                    <div class="card_info">
+                        <div class="icon"><img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/main_ingre.svg"></div>
+                        <div class="title">회사소개</div>
+                        <div class="description">참선진 녹즙,<br>믿을 수 있나요?</div>                    
+                    </div>
+                </a>
+            </div>
+        	<div class="card_box">
+                <a href="/board/product/list.html?board_no=4">
+                    <div class="card_info">
+                        <div class="icon"><img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/main_review.svg"></div>
+                        <div class="title">고객 후기</div>
+                        <div class="description">다양한 후기가<br>궁금하시다면?</div>                    
+                    </div>
+                </a>
+            </div>
+        	<div class="card_box">
+                <a href="/location.html">
+                    <div class="card_info">
+                        <div class="icon"><img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/main_location.svg"></div>
+                        <div class="title">창업문의</div>
+                        <div class="description">참선진녹즙의 지사<br>개설문의를 안내합니다.</div>                    
+                    </div>
+                </a>
+            </div>            
+        </div>
+    </section>
+    
+	<section class="mm_sec11 width1280 m_off">
+		<div class="title_box">
+			<!-- 메인영역09 : 타이틀 -->
+			<!--@import(/section/mm_sec11_title.html)-->
+		</div><!-- //title_box -->
+		<!-- 메인영역 11 : 추천제품 -->
+		<div module="product_listmain_1"class="cboth ec-base-product">
+			<!--
+				$count = 4
+				※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+				※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+			-->
+			<ul class="prdList grid4">
+				<!--@import(/product/main_list_product.html)-->
+			</ul>
+		</div>
+		<!-- 메인영역09 : 더보기 링크수정 -->
+		<!--@import(/section/mm_sec11_more.html)-->
+	</section>
+    
+    <div class="mm_sec09_box m_off">
+        <section class="mm_sec09 width1280">
+            <div class="title_box">
+                <!-- 메인영역09 : 타이틀 -->
+                <!--@import(/section/mm_sec09_title.html)-->
+            </div><!-- //title_box -->
+            <!-- 메인영역 09 : 스테디 셀러 -->
+            <div module="product_listmain_2"class="cboth ec-base-product">
+                <!--
+                    $count = 8
+                    ※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+                    ※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+                -->
+                <ul class="prdList grid4">
+                    <!--@import(/product/main_list_product.html)-->
+                </ul>
+            </div>
+            <!-- 메인영역09 : 더보기 링크수정 -->
+            <!--@import(/section/mm_sec09_more.html)-->
+        </section>
+   </div>
+
+	<section class="mm_sec03 width1280 m_off">
+		<!-- 메인영역03 : 트렌드 키워드 -->
+		<div class="title_box">
+			<!-- 메인영역03 : 타이틀 -->
+			<!--@import(/section/mm_sec03_title.html)-->
+		</div><!-- //title_box -->
+		<div class="trand_keyword">
+			<!-- 메인영역03 : 트렌드 -->
+			<!--@import(/section/mm_trend.html)-->
+		</div><!-- //trand_keyword -->
+	</section><!-- //mm_sec03 -->
+
+	<section class="mm_sec05 width1280 m_off">
+		<div class="title_box">
+			<!-- 메인영역05 : 타이틀 -->
+			<!--@import(/section/mm_sec05_title.html)-->
+		</div><!-- //title_box -->
+		<!-- 메인영역05 : 신상품 진열대 -->
+		<div class="mm_new_prd cboth">
+			<div class="new_prd_list">
+				<div module="product_listmain_5" class="ec-base-product">
+					<!--
+					$count = 5
+					※ 노출시킬 상품의 갯수를 숫자로 설정할 수 있으며, 설정하지 않을경우, 최대 200개로 자동제한됩니다.
+					※ 상품 노출갯수가 많으면 쇼핑몰에 부하가 발생할 수 있습니다.
+					-->
+					<ul class="prdList grid2_ban">
+						<!--@import(/product/main_new_product.html)-->
+					</ul>
+				</div>
+			</div> <!-- //new_prd_left -->
+		</div><!-- //mm_new_prd -->
+	</section><!-- //mm_sec05 -->
+
+	<section class="mm_sec06 m_off">
+		<div class="marquee">
+			
+			<ul class="marquee_content">
+				<!-- 메인영역06 : 전광판 텍스트 -->
+				<!--@import(/section/mm_text_banner.html)-->	
+			</ul><!-- //main_marquee_box -->
+		</div><!-- //main_marquee_txt -->
+	</section>
+
+	<section class="mm_sec08 width1280 m_off">
+		<div class="title_box">
+			<!-- 메인영역08 : 타이틀 -->
+			<!--@import(/section/mm_sec08_title.html)-->
+		</div><!-- //title_box -->
+		<!-- 메인영역 08 : 이벤트 배너  -->	
+		<div class="eb_box"  module="board_list_8">
+		
+					<!--
+						$count = 2
+					-->
+			<a class="eb_left" href="/board/product/read.html{$param_read}">
+				<div class="eb_thum">
+					<!-- 이미지 주소 작업 쇼핑몰 주소로 변경해주세요 ex). ecudemo207341 -> ecudemo207500 -->
+					<img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" />
+				</div><!-- //eb_thum-->
+				<div class="eb_desc">
+					<div class="eb_name">{$subject}</div>
+				</div><!-- //eb_desc -->
+			</a><!-- //eb_left -->
+
+			<a class="eb_right" href="/board/product/read.html{$param_read}">
+				<div class="eb_thum">
+					<!-- 이미지 주소 작업 쇼핑몰 주소로 변경해주세요 ex). ecudemo207341 -> ecudemo207500 -->
+					<img src="//ecimg.cafe24img.com/pg208b80947175089/farmdew1/file_data{$real_filename}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" />
+				</div><!-- //eb_thum-->
+				<div class="eb_desc">
+					<div class="eb_name">{$subject}</div>
+				</div><!-- //eb_desc -->
+			</a><!-- //eb_right -->
+
+		</div><!-- //eb_box -->
+		<div class="event_more cboth"><a href="/board/갤러리/8/" class="more_btn"><span>이벤트 더 보러 가기</span><span class="arrow_lb"><img src="/morenvyimg/svg/arrow_light_b.svg" alt="더보기화살표"></span></a></div>
+	</section>
+
+	<section class="mm_sec10 width1280 m_off">
+		<!-- 메인영역 10 : 가이드 -->
+		<!--@import(/section/mm_guide.html)-->
+	</section>
+</div><!-- //main_content -->
+
+<script src="/_custom/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+	 var jQuery220 = jQuery.noConflict(true);
+</script>
+
+<!--메인 배너용 css, js-->
+<!--@import(/main_banner.css)-->
+<!--@import(/main_banner.js)-->
+
+<!--@define(cmc_log)-->
+<!--@import(/mfooter.html)-->
