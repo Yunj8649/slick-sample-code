@@ -115,27 +115,64 @@
 
 
 
-@keyframes Play {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+@keyframes Play { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+@-webkit-keyframes Play { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+@-moz-keyframes Play { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+@-ms-keyframes Play { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+@-o-keyframes fPlay { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+@keyframes Play { 0% { stroke-dashoffset: 170; } 100% { stroke-dashoffset: 0; } }
+
+
+
+
+.mm_sec01 .c_main .txt_box {
+  padding: 50px 15px;
+  text-align: center;
 }
-@-webkit-keyframes Play {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+.mm_sec01 .c_main .txt_box .txt01 {
+  font-size: 22px;
+  margin-bottom: 17px;
+  
 }
-@-moz-keyframes Play {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+.mm_sec01 .c_main .txt_box .txt02 {
+font-size:22px;
+  margin-bottom:22px;
 }
-@-ms-keyframes Play {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+.mm_sec01 .c_main .c_inner .inner_01 {
+  
 }
-@-o-keyframes fPlay {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+.mm_sec01 .c_main .c_inner .inner_02 {
+width:100%;
+  height:auto;
 }
-@keyframes Play {
-  0% { stroke-dashoffset: 170; }
-  100% { stroke-dashoffset: 0; }
+.mm_sec01 .main01 .c_inner .inner_02 {
+  background: #94D16E;
+}
+.mm_sec01 .main02 .c_inner .inner_02 {
+  background: #FFB876;
+}
+.mm_sec01 .main03 .c_inner .inner_02 {
+  background: #FFEEB0;
+}
+.mm_sec01 .c_more_btn {
+position: relative;
+  width: auto;
+  height: 20px;
+  line-height: normal;
+  color: #1a1a1a;
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+  font-weight: 400;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: -0.02em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.mm_sec01 .c_more_btn img{width:auto !important;}
+.mm_sec01 .swiper01 .swiper-pagination1, .mm_sec01 .swiper01 .mm_sec01_box01 {
+display:none;
 }
