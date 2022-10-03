@@ -1,42 +1,15 @@
 jQuery(document).ready(function() {
 	/* 메잉영역01 : 메인비주얼 */
-    var swiper01_top = new Swiper('.main_banner_top', {
-        direction: 'vertical',
-		slidesPerView: 1,
-        touchRatio: 0,
+	var swiper01 = new Swiper('.swiper01', {
+		slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 60,
+        //effect: "fade",
 		loop: true,
-        loopedSlides: jQuery('.main_banner_bottom').find('.swiper-slide').length,
-        loopAdditionalSlides: 1,
-		speed:1000,
-        on: {
-            slideChangeTransitionStart: function () {
-                // jQuery('.text_slide_01 .txt01').hide(0);
-                jQuery('.text_slide_01 .txt01').addClass('aos-init').addClass('aos-animate');
-              },
-              slideChangeTransitionEnd: function () {
-                jQuery('.text_slide_01 .txt01').show(0);
-                jQuery('.text_slide_01 .txt01').removeClass('aos-init').removeClass('aos-animate');
-              },
-        }
-	});
-    
-     var swiper01_bottom = new Swiper('.main_banner_bottom', {
-         direction: 'vertical',
-		slidesPerView: 1,
-        touchRatio: 0,
-		loop: true,
-        loopedSlides: jQuery('.main_banner_bottom').find('.swiper-slide').length,
-        loopAdditionalSlides: 1,
-		speed:1000,
-	});
-    
-    var swiper01 = new Swiper('.main_banner_left', {
-		slidesPerView: 1,
-        touchRatio: 0,
-		loop: true,
-        loopedSlides: jQuery('.main_banner_left').find('.swiper-slide').length,
-        loopAdditionalSlides: 1,
-		pagination: false,
+		pagination: {
+			el: '.swiper-pagination1',
+			clickable: true,			
+		},
         navigation: {
 			nextEl: '.swiper-button-next-main',
 			prevEl: '.swiper-button-prev-main',
@@ -46,29 +19,10 @@ jQuery(document).ready(function() {
 			disableOnInteraction: false,
 		},
 		speed:1000,
-        on: {
-            slidePrevTransitionEnd: function () {
-                var i = this.realIndex + 1;
-                if ( i === 1 ) {
-                    setTimeout(() => {swiper01_top.slideNext(1000, false)}, 500);
-                    setTimeout(() => {swiper01_bottom.slideNext(1000, false)}, 1000);
-                } else {
-                    setTimeout(() => {swiper01_top.slideToLoop(this.realIndex, 1000, false)}, 500);
-                    setTimeout(() => {swiper01_bottom.slideToLoop(this.realIndex, 1000, false)}, 1000);
-                }
-            },
-            realIndexChange: function () {
-                var i = this.realIndex + 1;
-	            $('.swiper-pagination1').html("<span>" + i + "</span>" + " / " + 3);
-                console.log('this.realIndex :' ,this.realIndex)
-                setTimeout(() => {swiper01_top.slideToLoop(this.realIndex, 1000, false)}, 500);
-                setTimeout(() => {swiper01_bottom.slideToLoop(this.realIndex, 1000, false)}, 1000);
-            }
-          }
 	});
 
-	 jQuery( ".swiper01" ).css( "opacity", "1" );
-   
+	jQuery( ".swiper01" ).css( "opacity", "1" );
+
 	/* 메인영역02 : 탭상품 진열대 */
 	var swiper2 = new Swiper('.swiper02', {
 		spaceBetween: 0,
@@ -193,7 +147,7 @@ jQuery(document).ready(function() {
         jQuery(".cate_title_banner .inner div:nth-child(3)").css("color","white");
     }*/
      //팜듀프레시스
-    if(cur_location == "33" || param_location=="33"){
+    if(cur_location == "33" || param_location=="33" || cur_location == "52" || param_location=="52" || cur_location == "53" || param_location=="53"){
         jQuery(".cate_title_banner:nth-child(1)").css("display", "none");
         jQuery(".cate_title_banner_freshis").removeClass("m_off");
     	jQuery(".cate_page .item:nth-child(1) a").css("color", "#04A41D");
@@ -207,20 +161,14 @@ jQuery(document).ready(function() {
         jQuery(".cate_page .item:nth-child(2)").css("border-bottom", "2px solid #04A41D");
         jQuery(".cate_title_banner").css("background-image", "url(//ecimg.cafe24img.com/pg208b80947175089/farmdew1/web/img/cate_banner_02_px.png)");
         jQuery(".menuCategory li").removeClass("selected");
-        if(cur_location == "32" || param_location=="32") {
-        	jQuery(".menuCategory li:nth-child(1)").addClass("selected");
-        }
-        if(cur_location == "36" || param_location=="36") {
+        if(cur_location == "37" || param_location=="37") {
             jQuery(".menuCategory li:nth-child(1)").addClass("selected");
         }
-        if(cur_location == "37" || param_location=="37") {
+        if(cur_location == "43" || param_location=="43") {
             jQuery(".menuCategory li:nth-child(2)").addClass("selected");
         }
-        if(cur_location == "43" || param_location=="43") {
-            jQuery(".menuCategory li:nth-child(3)").addClass("selected");
-        }
         if(cur_location == "48" || param_location=="48") {
-            jQuery(".menuCategory li:nth-child(4)").addClass("selected");
+            jQuery(".menuCategory li:nth-child(3)").addClass("selected");
         }
         
 
@@ -247,7 +195,7 @@ jQuery(document).ready(function() {
     var cur_location_detail = window.location.pathname;
     cur_location_detail = decodeURIComponent(cur_location_detail);
     cur_location_detail = cur_location_detail.split("/")[5];
-    console.log("cur_location_detail",cur_location_detail);
+    //console.log("cur_location_detail",cur_location_detail);
     
     if(cur_location_detail != "33"){
         jQuery('#actionCart, #actionWish,#actionCartClone, #actionWishClone').css('display','block'); 
@@ -493,6 +441,15 @@ jQuery(document).ready(function() {
         sessionStorage.setItem("order_product",_prd_name);
         window.location.href="/farmdew_order.html";
     });
+    
+    /*상품상세 정보표시*/
+    var info_stock = jQuery(".xans-product-detaildesign .table2 tr[rel='상품간략설명'] span").text();
+    var info_del = jQuery(".xans-product-detaildesign .table2 tr[rel='자체상품코드'] span").text();
+    jQuery(".xans-product-detaildesign .table2 tr[rel='보관방법'] .m_item").text(info_stock);
+    jQuery(".xans-product-detaildesign .table2 tr[rel='배송정보'] .m_item").text(info_del);
+
+    
+    
     
     /*주문페이지*/
     function change_product(){

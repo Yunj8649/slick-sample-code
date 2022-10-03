@@ -18,7 +18,7 @@
 
 /* 메인영역01 : 메인 키비주얼 */
 .mm_sec01 {margin-bottom:120px;}
-.mm_sec01 .swiper01 {width:100%; height: 800px;opacity: 0;}
+.mm_sec01 .swiper01 {width:100%; height: 840px;opacity: 0;}
 .mm_sec01 .swiper01 .swiper-slide {width:1920px; position:relative;}
 .mm_sec01 .swiper01 .swiper-slide img {width:100%;height:100%;}
 .mm_sec01 .swiper01 .swiper-slide .inner {opacity:0; font-size:0px; text-align:left; position:absolute; left:1160px; top:0px; height:100%; margin-left:0px; display:flex; flex-direction:column; -webkit-box-pack: center; justify-content:center; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s;  transition: all 0.4s;}
@@ -35,8 +35,8 @@
 .mm_sec01 .swiper01 .swiper-pagination-bullet {margin:0 4px !important; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s;  transition: all 0.3s;}
 .mm_sec01 .swiper01 .swiper-pagination-bullet {opacity:1;background:#d1d1d1;width:22px;height:2px;border-radius:0px;vertical-align:middle; border:1px solid #d1d1d1;}
 .mm_sec01 .swiper01 .swiper-pagination-bullet-active {opacity:1; background:#1a1a1a; width:54px; height:2px; border:1px solid #1a1a1a; }
-/* .mm_sec01 .swiper01 .swiper-button-prev-main {background-image:url('../morenvyimg/svg/main_ar_left.svg'); left:60px; width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; left:50%; margin-left:-870px;;}
-.mm_sec01 .swiper01 .swiper-button-next-main {background-image:url('../morenvyimg/svg/main_ar_right.svg'); right:60px;  width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; right:50%; margin-right:-870px;} */
+.mm_sec01 .swiper01 .swiper-button-prev-main {background-image:url('../morenvyimg/svg/main_ar_left.svg'); left:60px; width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; left:50%; margin-left:-870px;;}
+.mm_sec01 .swiper01 .swiper-button-next-main {background-image:url('../morenvyimg/svg/main_ar_right.svg'); right:60px;  width:67px; height:56px; background-size:67px 56px; margin-top:-33.5px; top:50%; right:50%; margin-right:-870px;}
 
 /* 메인영역02 : 탭 상품 진열대 */
 .mm_sec02 {margin-bottom:160px;}
